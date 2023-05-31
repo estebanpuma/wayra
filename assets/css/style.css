@@ -1,0 +1,204 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #37B9C7;
+    --accent-color: #F5C297;
+    --contrast-color: #FFFFFF;
+
+  }
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+  .navbar {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--contrast-color);
+  }
+  
+  .navbar-logo img {
+    height: 64px;
+    width: auto;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin-left: 1.5rem;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: var(--contrast-color);
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: #339EAE;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 24px;
+    }
+  
+    .navbar-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: var(--contrast-color);
+      transition: all 0.3s ease;
+    }
+  
+    .navbar-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(4px, 4px);
+    }
+  
+    .navbar-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -4px);
+    }
+  }
+
+
+
+
+.hero{
+    background-image: url("/assets/images/farmerColor.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+.wayra{
+    background-image: url("/assets/images/logo1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+.products{
+    background-image: url("/assets/images/dark-chocolate-bar-wrapped-golden-foil-white-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: var(--accent-color);
+}
+
+
+
+.container{
+    height: auto;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: justify;
+}
+
+.container img{
+    width: 100%;
+    height: auto;
+}
+
+.experiencia{
+    background-color: var(--secondary-color);
+    color: var(--contrast-color);
+    padding-bottom: 24px;
+}
+
+
+
+.text{
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+.cards{
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+}
+
+.card{
+  width: auto;
+  height: 500px;
+}
+
+.card img{
+  height: 300px;
+}
+
+.take{
+  
+  height: auto;
+}
+.video-container video{
+  width: 100%;
+}
+
+@media screen and (min-width: 410px) {
+  .take{
+    display: none;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.footer-content nav a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
