@@ -92,21 +92,21 @@
 
 
 .hero{
-    background-image: url("assets/images/farmerColor.jpg");
+    background-image: url("../assets/images/farmerColor.jpg");
     background-size: cover;
     background-position: center;
     height: 30vh;
 }
 
 .wayra{
-    background-image: url("assets/images/logo1.jpg");
+    background-image: url("../assets/images/logo1.jpg");
     background-size: cover;
     background-position: center;
     height: 30vh;
 }
 
 .products{
-    background-image: url("assets/images/dark-chocolate-bar-wrapped-golden-foil-white-background.jpg");
+    background-image: url("../assets/images/dark-chocolate-bar-wrapped-golden-foil-white-background.jpg");
     background-size: cover;
     background-position: center;
     height: 500px;
